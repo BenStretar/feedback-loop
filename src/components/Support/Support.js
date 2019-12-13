@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
-class understanding extends Component{
+class Feeling extends Component{
+
+    handleNext=()=>{
+        console.log('clicked')
+    }
+
     render(){
         return(
             <>
-                <label>How well are you understanding the content? </label><br/>
+                <label>How well are you being supported? </label><br/>
                 <input type="number" placeholder="" />
 
                 <br />
@@ -14,4 +19,4 @@ class understanding extends Component{
     }
 }
 
-export default understanding;
+export default Feeling;
