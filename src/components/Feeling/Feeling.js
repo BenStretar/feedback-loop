@@ -3,16 +3,14 @@ import React, { Component } from 'react';
 class Feeling extends Component{
 
     handleNext=()=>{
-        console.log('clicked')
+        console.log('clickedFeelings')
     }
 
     render(){
         return(
             <>
-                <label>How are you feeling? </label><br />
-                <input type="number" placeholder="" />
-
-                <br />
+                <h2>How are you feeling?</h2>
+                <input type="number" placeholder="" max="10"/>
                 <button onClick={this.handleNext}>Next</button>
             </>
         )
