@@ -4,6 +4,7 @@ class understanding extends Component{
 
     handleNext=()=>{
         console.log('clickedUnderstanding')
+        this.props.history.push('/support');
     }
 
     render(){

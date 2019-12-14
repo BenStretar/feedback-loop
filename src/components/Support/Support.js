@@ -4,6 +4,7 @@ class Feeling extends Component{
 
     handleNext=()=>{
         console.log('clickedSupport')
+        this.props.history.push('/comments');
     }
 
     render(){
