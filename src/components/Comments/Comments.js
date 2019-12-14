@@ -4,6 +4,7 @@ class Feeling extends Component{
 
     handleNext=()=>{
         console.log('clickedComments')
+        this.props.history.push('/review');
     }
 
     render(){
