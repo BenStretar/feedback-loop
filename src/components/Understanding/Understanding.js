@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { withRouter } from 'react-router-dom'
+//import { withRouter } from 'react-router-dom'
 
 class understanding extends Component{
 
@@ -34,4 +34,4 @@ class understanding extends Component{
     }
 }
 
-export default withRouter(connect()(understanding));
+export default connect()(understanding);
