@@ -27,7 +27,7 @@ class Feeling extends Component{
         return(
             <>
                 <h2>Any comments you want to leave? </h2>
-                <input type="text" placeholder="" onChange={this.handleInput}/>
+                <input type="text" placeholder="Enter a comment" onChange={this.handleInput}/>
                 <button onClick={this.handleNext}>Next</button>
             </>
         )

@@ -27,7 +27,7 @@ class understanding extends Component{
         return(
             <>
                 <h2>How well are you understanding the content? </h2>
-                <input type="number" placeholder="" max="10" onChange={this.handleInput}/>
+                <input type="number" placeholder="Enter number 1-5" max="5" onChange={this.handleInput}/>
                 <button onClick={this.handleNext}>Next</button>
             </>
         )
