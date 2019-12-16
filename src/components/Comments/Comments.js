@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 //import { withRouter } from 'react-router-dom'
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
-class Feeling extends Component{
+const styles = theme => ({
+    button: {
+      margin: theme.spacing.unit,
+    },
+    input: {
+      display: 'none',
+    },
+  });
+
+class Comments extends Component{
 
     state={
         comment: ''
@@ -24,14 +35,15 @@ class Feeling extends Component{
     }
 
     render(){
+        const {classes} = this.props;
         return(
             <>
                 <h2>Any comments you want to leave? </h2>
                 <input type="text" placeholder="Enter a comment" onChange={this.handleInput}/>
-                <button onClick={this.handleNext}>Next</button>
+                <Button color="primary" className={classes.button} onClick={this.handleNext}>Next</Button>
             </>
         )
     }
 }
 
-export default connect()(Feeling);
+export default connect()(withStyles(styles)(Comments));
