@@ -13,7 +13,7 @@ const styles = theme => ({
     },
   });
 
-class understanding extends Component{
+class Understanding extends Component{
 
     state = {
         understanding: ''
@@ -46,4 +46,4 @@ class understanding extends Component{
     }
 }
 
-export default connect()(withStyles(styles)(understanding));
+export default connect()(withStyles(styles)(Understanding));
