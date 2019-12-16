@@ -5,14 +5,14 @@ import { withRouter } from 'react-router-dom'
 class Feeling extends Component{
 
     state={
-        aComment: ''
+        comment: ''
     }
 
     //Input
     handleInput=(event)=>{
         console.log('In handleInput with', event.target.value)
         this.setState({
-            aComment: event.target.value
+            comment: event.target.value
         })
     }
 
@@ -20,7 +20,7 @@ class Feeling extends Component{
     handleNext=()=>{
         console.log('clickedComments')
         this.props.history.push('/review');
-        this.props.dispatch({type: 'COMMENT', payload: this.state.aComment})
+        this.props.dispatch({type: 'COMMENT', payload: this.state.comment})
     }
 
     render(){

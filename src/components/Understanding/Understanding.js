@@ -5,14 +5,14 @@ import { withRouter } from 'react-router-dom'
 class understanding extends Component{
 
     state = {
-        aUnderstanding: ''
+        understanding: ''
     }
 
     //Input
     handleInput=(event)=>{
         console.log('In handleInput with', event.target.value)
         this.setState({
-            aUnderstanding: event.target.value
+            understanding: event.target.value
         })
     }
 
@@ -20,7 +20,7 @@ class understanding extends Component{
     handleNext=()=>{
         console.log('clickedUnderstanding')
         this.props.history.push('/support');
-        this.props.dispatch({type: 'UNDERSTANDING', payload: this.state.aUnderstanding})
+        this.props.dispatch({type: 'UNDERSTANDING', payload: this.state.understanding})
     }
 
     render(){

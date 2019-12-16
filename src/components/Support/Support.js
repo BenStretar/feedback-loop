@@ -5,14 +5,14 @@ import { withRouter } from 'react-router-dom'
 class Feeling extends Component{
 
     state={
-        aSupport: ''
+        support: ''
     }
 
     //Input
     handleInput=(event)=>{
         console.log('In handleInput with', event.target.value)
         this.setState({
-            aSupport: event.target.value
+            support: event.target.value
         })
     }
 
@@ -20,7 +20,7 @@ class Feeling extends Component{
     handleNext=()=>{
         console.log('clickedSupport')
         this.props.history.push('/comments'); // Move user to Comments page
-        this.props.dispatch({type: 'SUPPORT', payload: this.state.aSupport})
+        this.props.dispatch({type: 'SUPPORT', payload: this.state.support})
     }
 
     render(){
