@@ -30,10 +30,10 @@ class Review extends Component{
             <>
             {JSON.stringify(this.props.reduxState)}
                 <h2>Review Your Feedback</h2>
-                <p>Feeling: {this.props.reduxState.feelingReducer.feeling}</p>
-                <p>Understanding: {this.props.reduxState.feelingReducer.understanding}</p>
-                <p>Support: {this.props.reduxState.feelingReducer.support}</p>
-                <p>Comments: {this.props.reduxState.feelingReducer.comment}</p>
+                <p>Feeling: {this.props.reduxState.feelingReducer}</p>
+                <p>Understanding: {this.props.reduxState.understandingReducer}</p>
+                <p>Support: {this.props.reduxState.supportReducer}</p>
+                <p>Comments: {this.props.reduxState.commentsReducer}</p>
                 <button onClick={this.postReview}>Submit</button> {/* takes user to Success */}
             </>
         )
