@@ -9,12 +9,12 @@ import logger from 'redux-logger';
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import {Provider} from 'react-redux'
 
-const reviewItems = (state = [], action) => {
-    if(action.type === `GET_REVIEW`) {
-        return action.payload;
-    }
-    return state;
-}
+// const reviewItems = (state = [], action) => {
+//     if(action.type === `GET_REVIEW`) {
+//         return action.payload;
+//     }
+//     return state;
+// }
 
 const feelingReducer = (state = [], action) => {
     if(action.type === 'FEELING') {
@@ -46,7 +46,7 @@ const commentsReducer = (state =[], action) => {
 
 const reduxStore = createStore(
     combineReducers({
-        reviewItems,
+        // reviewItems,
         feelingReducer,
         understandingReducer,
         supportReducer,
