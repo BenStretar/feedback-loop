@@ -8,12 +8,15 @@ class understanding extends Component{
         aUnderstanding: ''
     }
 
+    //Input
     handleInput=(event)=>{
+        console.log('In handleInput with', event.target.value)
         this.setState({
             aUnderstanding: event.target.value
         })
     }
 
+    // Button
     handleNext=()=>{
         console.log('clickedUnderstanding')
         this.props.history.push('/support');

@@ -9,6 +9,7 @@ class Feeling extends Component{
     }
 
     handleInput=(event)=>{
+        console.log('In handleInput with', event.target.value)
         this.setState({
             aFeeling: event.target.value
         })        
@@ -25,7 +26,8 @@ class Feeling extends Component{
         return(
             <>
                 <h2>How are you feeling?</h2>
-                <input type="number" placeholder="" max="10" onChange={this.handleInput}/>
+                <input type="number" placeholder="Please enter 1-5" max="5" 
+                value={this.state.aFeeling}onChange={this.handleInput}/>
                 <button onClick={this.handleNext}>Next</button>
             </>
         )
