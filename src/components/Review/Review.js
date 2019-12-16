@@ -14,7 +14,7 @@ class Review extends Component{
             comments: this.props.reduxState.feelingReducer.comment
         }
 
-        Axios.post('/feedback', feedback)
+        Axios.post('/feedback', feedback) // realizing to late that I need to create server stuff
             .then(response => {
                 console.log(response)
             this.props.history.push('/success'); 
